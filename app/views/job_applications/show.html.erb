@@ -1,0 +1,7 @@
+<h2>Job Applications</h2>
+
+<h3><%= @job_application.job_title %> with <%= @job_application.company_name %></h3>
+
+<%= render "info" %>
+
+<%= link_to "Edit", edit_user_job_application_path(current_user, @job_application) %>

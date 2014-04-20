@@ -13,7 +13,9 @@ JstApp::Application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-  resources :users
+  resources :users do
+    resources :job_applications
+  end
   get  "/session/new"  => "session#new"
   post "/session"      => "session#create"
   get  "/logout"       => "session#destroy"

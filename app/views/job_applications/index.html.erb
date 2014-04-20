@@ -1,0 +1,26 @@
+<div>
+  <h2>Job Applications</h2>
+  <ul>
+    <li>
+      <%= link_to "Create a new job application.", new_user_job_application_path %>
+    </li>
+  </ul>
+  <table>
+    <% @job_applications.each do |job| %>
+      <tr>
+        <td>
+          <%= job.job_title %>
+        </td>
+        <td>
+          <%= job.company_name %>
+        </td>
+        <td>
+          <%= link_to "Edit", edit_user_job_application_path(current_user, job) %>
+        </td>
+        <td>
+          <%= link_to "Delete", [current_user, job], method: :delete %>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+</div>
