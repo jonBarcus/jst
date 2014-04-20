@@ -1,0 +1,23 @@
+<%= form_for [current_user, @job_application] do |f| %>
+    <%= f.label :job_title %>
+    <%= f.text_field :job_title %>
+    <%= f.label :company_name %>
+    <%= f.text_field :company_name %>
+    <%= f.label :contact_name %>
+    <%= f.text_field :contact_name %>
+    <%= f.label :contact_title %>
+    <%= f.text_field :contact_title %>
+    <%= f.label :contact_email %>
+    <%= f.text_field :contact_email %>
+    <%= f.label :description_url %>
+    <%= f.text_field :description_url %>
+    <%= f.label :status %>
+    <%= f.text_field :status %>
+    <%= f.label :date_submitted %>
+    <%= f.date_field :date_submitted %>
+    <%= f.label :submission_method %>
+    <%= f.text_field :submission_method %>
+    <%= f.label :follow_up %>
+    <%= f.text_field :follow_up %>
+    <%= f.submit %>
+<% end %>
