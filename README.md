@@ -13,5 +13,6 @@
 
 4. ```$ git remote add upstream git@github.com:davidmccoy/jst.git```
   * this will make it so you can push __your branch__ to GitHub (similar to homework submission)
-  * just make sure you push __your branch__ to upstream __your branch__, not to origin
+  * just make sure you push __your branch__ to origin __your branch__, and the send a pull request
+  * don't push to upstream master
   * you can then make a pull request
