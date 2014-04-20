@@ -12,7 +12,7 @@
 3. ```$ git remote -v``` (prints to terminal remote repos)
 
 4. ```$ git remote add upstream git@github.com:davidmccoy/jst.git```
-  * this will make it so you can push __your branch__ to GitHub (similar to homework submission)
-  * just make sure you push __your branch__ to origin __your branch__, and the send a pull request
+  * this will make it so you can pull from GitHub
+  * just make sure you push __your branch__ to origin __your branch__, and then send a pull request ((similar to homework submission)
   * don't push to upstream master
   * you can then make a pull request
