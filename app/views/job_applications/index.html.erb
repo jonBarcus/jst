@@ -9,7 +9,7 @@
     <% @job_applications.each do |job| %>
       <tr>
         <td>
-          <%= job.job_title %>
+          <%= link_to job.job_title, [current_user, job] %>
         </td>
         <td>
           <%= job.company_name %>
